@@ -1,45 +1,48 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
-    <title>Getting Started: Serving Web Content</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-</head>
+    <head>
+        <title>Getting Started: Serving Web Content</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    </head>
     <body>
-       
-    <table>
-    <thead>
-    <tr>
-    <th>ID</th>
-    <th>Name</th>
-    <th>Adress Email</th>
-    <th>Delete Record</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr th:each="user : ${users}">
-    <td th:text="${user.id}"></td>
-    <td th:text="${user.name}"></td>
-    <td th:text="${user.email}"></td>
-    <td><a href="/demo/delete">Delete</a></td>
-    </tr>
-    </tbody>
-    </table>
-     <br/>
-     Create new user:
-    <form th:action="@{/demo/add}">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Adress Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="user : ${users}">
+                    <td th:text="${user.id}"></td>
+                    <td th:text="${user.name}"></td>
+                    <td th:text="${user.email}"></td>
+                </tr>
+            </tbody>
+        </table>
+        <br/>
+        Create new user:
+        <form th:action="@{/add}">
             <div><label> Name: <input type="text" name="name"/> </label></div>
             <div><label> Email: <input type="text" name="email"/> </label></div>
             <div><input type="submit" value="Add"/></div>
-    </form>
-    <br/>
-     Update old user:
-     <form th:action="@{/demo/update}">
+        </form>
+        <br/>
+        Update old user:
+        <form th:action="@{/update}">
             <div><label> ID: <input type="text" name="id"/> </label></div>
             <div><label> Name: <input type="text" name="name"/> </label></div>
             <div><label> Email: <input type="text" name="email"/> </label></div>
             <div><input type="submit" value="Update"/></div>
-    </form>
+        </form>
+        Delete user:
+        <form th:action="@{/delete}">
+            <div><label>ID: <input type="text" name="id"/> </label></div>
+            <div><input type="submit" value="Delete"/></div>
+        </form>
     </body>
-    
-    
+
+
 </html>
