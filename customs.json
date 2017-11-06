@@ -16,6 +16,7 @@
         "th:field": {
             "context": "input"
         },
+        "th:href": {},
         "th:value": {
             "context": "input"
         }
