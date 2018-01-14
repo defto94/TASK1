@@ -26,7 +26,7 @@ public class UserController {
     public @ResponseBody
     String addNewUser(@RequestParam String name, @RequestParam String email) {
 
-        User n = new User();
+        User n = new User(); 
         n.setName(name);
         n.setEmail(email);
         userRepository.save(n);

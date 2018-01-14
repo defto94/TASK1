@@ -5,9 +5,6 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     </head>
     <body>
-        <form th:action="@{/logout}" method="post">
-            <input type="submit" value="Sign Out"/>
-        </form>
         <table>
             <thead>
                 <tr>
@@ -24,7 +21,7 @@
                     <td th:text="${user.name}"></td>
                     <td th:text="${user.email}"></td>
                     <td>  <a th:href="@{/delete/{id}(id=${user.id})}">Delete</a> </td>
-               </tr>
+                </tr>
             </tbody>
         </table>
         <br/>

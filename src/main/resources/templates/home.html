@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div th:if="${param.logout}">
+            You have been logged out.
+        </div>
+        <div>
+            <br/>
+            Welcome!
+            <p>Login to administration panel <a href="/richUI">here</a></p>
+            <p>Admin Users list <a href="/users">here</a></p>
+            <p>Admin Books list <a href="/books">here</a></p>
+        </div>
+    </body>
+</html>

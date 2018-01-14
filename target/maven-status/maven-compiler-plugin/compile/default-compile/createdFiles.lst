@@ -8,3 +8,4 @@ pl\lodz\project\task1\controller\BookController.class
 pl\lodz\project\task1\config\WebSecurityConfig.class
 pl\lodz\project\task1\domain\Book.class
 pl\lodz\project\task1\controller\UserController.class
+pl\lodz\project\task1\config\ScheduledTask.class

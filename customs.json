@@ -4,6 +4,9 @@
         "th:text": {
             "context": "td"
         },
+        "th:if": {
+            "context": "td"
+        },
         "th:src": {
             "context": "img"
         },
