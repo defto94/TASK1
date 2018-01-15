@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="hello.js"></script>
     </head>
     <body>
         <div th:if="${param.logout}">
@@ -13,6 +14,14 @@
             <p>Login to administration panel <a href="/richUI">here</a></p>
             <p>Admin Users list <a href="/users">here</a></p>
             <p>Admin Books list <a href="/books">here</a></p>
+            <br/><br/><br/>
+             ************************
+             <br/><br/><br/>
+            <p>jQuery example from <a href="http://rest-service.guides.spring.io/greeting">this</a> site:</p>
+            <div>
+                <p class="greeting-id">The ID is </p>
+                <p class="greeting-content">The content is </p>
+            </div>
         </div>
     </body>
 </html>
